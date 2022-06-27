@@ -17,6 +17,6 @@
     <br>
 
 <%--    Your name: ${param.employeeName}--%>
-    Your name: ${nameAttribute} ${description}
+    Your name: ${nameAttribute}
 </body>
 </html>
