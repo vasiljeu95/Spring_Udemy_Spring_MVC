@@ -2,6 +2,9 @@ package com.vasilyeu.spring.mvc;
 
 import lombok.Data;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * Employee
  *
@@ -14,8 +17,13 @@ public class Employee {
     private String surName;
     private int salary;
     private String department;
+    private Map<String,String> departments;
 
     public Employee() {
+        departments = new HashMap<>();
+        departments.put("Information Technology", "IT");
+        departments.put("Human Resources", "HR");
+        departments.put("Sales", "Sales");
     }
 
     @Override

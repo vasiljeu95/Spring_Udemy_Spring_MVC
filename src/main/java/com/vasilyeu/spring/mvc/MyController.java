@@ -27,9 +27,9 @@ public class MyController {
         Employee employee = new Employee();
         employee.setName("Stepan");
         employee.setSurName("Vasilyeu");
-        employee.setSalary(100);
+        employee.setSalary(10000);
 
-        model.addAttribute("Employee", employee);
+        model.addAttribute("employee", employee);
 
         return "askEmployeeDetailsView";
     }
