@@ -20,6 +20,8 @@ public class Employee {
     private Map<String,String> departments;
     private String carBrand;
     private Map<String,String> carBrands;
+    private String[] languages;
+    private Map<String,String> languageList;
 
 
     public Employee() {
@@ -33,6 +35,11 @@ public class Employee {
         carBrands.put("Volkswagen", "VW");
         carBrands.put("Audi", "Audi");
         carBrands.put("Mercedes-Benz", "MB");
+
+        languageList = new HashMap<>();
+        languageList.put("English", "EN");
+        languageList.put("Deutch", "DE");
+        languageList.put("French", "FR");
     }
 
     @Override
