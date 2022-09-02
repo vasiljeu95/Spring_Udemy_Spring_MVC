@@ -18,12 +18,21 @@ public class Employee {
     private int salary;
     private String department;
     private Map<String,String> departments;
+    private String carBrand;
+    private Map<String,String> carBrands;
+
 
     public Employee() {
         departments = new HashMap<>();
         departments.put("Information Technology", "IT");
         departments.put("Human Resources", "HR");
         departments.put("Sales", "Sales");
+
+        carBrands = new HashMap<>();
+        carBrands.put("BMW", "BMW");
+        carBrands.put("Volkswagen", "VW");
+        carBrands.put("Audi", "Audi");
+        carBrands.put("Mercedes-Benz", "MB");
     }
 
     @Override

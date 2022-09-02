@@ -22,5 +22,7 @@
     <br>
     Your departments: ${employee.department}
     <br>
+    Your car brand: ${employee.carBrand}
+    <br>
 </body>
 </html>
