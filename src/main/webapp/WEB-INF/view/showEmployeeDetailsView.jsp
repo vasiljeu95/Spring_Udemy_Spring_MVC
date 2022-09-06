@@ -34,5 +34,7 @@
         </c:forEach>
     </ul>
     <br>
+    Your Phone Number: ${employee.phoneNumber}
+    <br>
 </body>
 </html>
