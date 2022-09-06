@@ -36,5 +36,7 @@
     <br>
     Your Phone Number: ${employee.phoneNumber}
     <br>
+    Your Email: ${employee.email}
+    <br>
 </body>
 </html>

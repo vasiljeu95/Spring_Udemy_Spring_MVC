@@ -1,5 +1,6 @@
 package com.vasilyeu.spring.mvc;
 
+import com.vasilyeu.spring.mvc.validation.CheckEmail;
 import lombok.Data;
 
 import javax.validation.constraints.*;
@@ -28,8 +29,12 @@ public class Employee {
     private Map<String,String> carBrands;
     private String[] languages;
     private Map<String,String> languageList;
+
     @Pattern(regexp = "\\d{2}-\\d{3}-\\d{2}-\\d{2}", message = "please use pattern XX-XXX-XX-XX")
     private String phoneNumber;
+
+    @CheckEmail(value = "abc.com", message = "email must ends with abc.com")
+    private String email;
 
     public Employee() {
         departments = new HashMap<>();
